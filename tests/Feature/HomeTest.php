@@ -2,7 +2,6 @@
 
 use App\Models\User;
 use Inertia\Testing\AssertableInertia as Assert;
-use Illuminate\Support\Facades\Route;
 
 test('landing page returns successful 200 response', function () {
     $response = $this->get('/');

@@ -1,0 +1,21 @@
+{
+    "agents": [
+        "antigravity"
+    ],
+    "cloud": true,
+    "guidelines": true,
+    "packages": [
+        "spatie/laravel-medialibrary"
+    ],
+    "skills": [
+        "infer-conventions",
+        "deploying-to-cloud",
+        "fortify-development",
+        "laravel-best-practices",
+        "testing-best-practices",
+        "wayfinder-development",
+        "inertia-react-development",
+        "tailwindcss-development",
+        "medialibrary-development"
+    ]
+}

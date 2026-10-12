@@ -1,3 +1,10 @@
-// Landing page components barrel export
-// Add landing components here as they are created
-export {};
+export * from './navbar';
+export * from './hero';
+export * from './about';
+export * from './skills-grid';
+export * from './projects-showcase';
+export * from './timeline';
+export * from './certifications';
+export * from './articles-showcase';
+export * from './contact';
+export * from './footer';

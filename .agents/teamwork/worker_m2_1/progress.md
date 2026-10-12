@@ -1,0 +1,43 @@
+# Progress — worker_m2_1
+
+**Last visited**: 2026-10-12T09:34:40Z
+
+- [x] Initialized DISPATCH.md, BRIEFING.md, and progress.md
+- [x] Read mandatory input files:
+  - [x] `ORIGINAL_REQUEST.md`
+  - [x] `PROJECT.md`
+  - [x] `explorer_m2_1/handoff.md`
+  - [x] `explorer_m2_2/handoff.md`
+  - [x] `explorer_m2_3/handoff.md`
+- [x] Review relevant skills (`tailwindcss-development`, `inertia-react-development`, `laravel-best-practices`)
+- [x] Step 1: Implement Backend Controllers & Routes
+  - [x] Created `app/Http/Controllers/HomeController.php`
+  - [x] Created `app/Http/Controllers/PublicProjectController.php`
+  - [x] Created `app/Http/Controllers/PublicArticleController.php`
+  - [x] Updated `routes/web.php` with named public routes
+- [x] Step 2: Implement CSS Neobrutalism Tokens & Layout Resolver
+  - [x] Updated `resources/css/app.css`
+  - [x] Updated `resources/js/app.tsx` layout resolver
+  - [x] Created `resources/js/layouts/public-layout.tsx`
+- [x] Step 3: Implement Landing Components (`resources/js/components/landing/*`)
+  - [x] `navbar.tsx`
+  - [x] `hero.tsx`
+  - [x] `about.tsx`
+  - [x] `skills-grid.tsx`
+  - [x] `timeline.tsx`
+  - [x] `certifications.tsx`
+  - [x] `projects-showcase.tsx`
+  - [x] `articles-showcase.tsx`
+  - [x] `contact.tsx`
+  - [x] `footer.tsx`
+  - [x] `index.ts`
+- [x] Step 4: Implement Public Pages (`resources/js/pages/*`)
+  - [x] `welcome.tsx`
+  - [x] `projects.tsx`
+  - [x] `articles.tsx`
+  - [x] `articles/show.tsx`
+  - [x] `projects/show.tsx`
+- [x] Step 5: Verification & QA
+  - [x] Run `vendor/bin/pint --format agent` (Clean)
+  - [x] Run `php artisan test --compact` (57 passed, 14 skipped, 0 failed)
+- [x] Step 6: Final handoff and notification to caller

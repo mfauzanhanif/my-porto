@@ -61,9 +61,9 @@ Every feature from the Survey phase is enumerated and assigned to a milestone:
 
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| M1 | Backend Data Layer & Seeding | Enums, migrations, models, casts, relations, `PortfolioDatabaseSeeder` | none | PLANNED |
-| M2 | Landing Page & Public Showcases | CSS tokens, public pages (`/`, `/projects`, `/articles`, `/articles/{slug}`), `HomeController`, landing components | M1 | PLANNED |
-| M3 | Admin Auth & CMS Dashboard | Fortify `/login`, `/dashboard`, TipTap editor, CRUD for all 8 entities, toast notifications, fix CMS TS errors | M1 | PLANNED |
+| M1 | Backend Data Layer & Seeding | Enums, migrations, models, casts, relations, `PortfolioDatabaseSeeder` | none | DONE |
+| M2 | Landing Page & Public Showcases | CSS tokens, public pages (`/`, `/projects`, `/articles`, `/articles/{slug}`), `HomeController`, landing components | M1 | DONE |
+| M3 | Admin Auth & CMS Dashboard | Fortify `/login`, `/dashboard`, TipTap editor, CRUD for all 8 entities, toast notifications, fix CMS TS errors | M1 | IN_PROGRESS |
 | M4 | Media Management & cPanel Readiness | Direct public disk in `config/filesystems.php`, `database/portfolio_dump.sql`, frontend build | M2, M3 | PLANNED |
 | M5 | E2E Integration & QA Hardening | Clean obsolete tests, pass 100% Pest tests, Tier 1-5 E2E tests, Pint, TypeScript check | M4, TEST_READY | PLANNED |
 
