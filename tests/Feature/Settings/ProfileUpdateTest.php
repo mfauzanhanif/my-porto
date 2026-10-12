@@ -10,6 +10,13 @@ class ProfileUpdateTest extends TestCase
 {
     use RefreshDatabase;
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->markTestSkipped('Legacy starter-kit profile routes removed; replaced by CMS admin profile management.');
+    }
+
     public function test_profile_page_is_displayed()
     {
         $user = User::factory()->create();

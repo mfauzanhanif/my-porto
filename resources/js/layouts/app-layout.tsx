@@ -1,4 +1,7 @@
-import AppLayoutTemplate from '@/layouts/app/app-sidebar-layout';
+import { AppContent } from '@/components/cms/app-content';
+import { AppShell } from '@/components/cms/app-shell';
+import { AppSidebar } from '@/components/cms/app-sidebar';
+import { AppSidebarHeader } from '@/components/cms/app-sidebar-header';
 import type { BreadcrumbItem } from '@/types';
 
 export default function AppLayout({
@@ -9,8 +12,12 @@ export default function AppLayout({
     children: React.ReactNode;
 }) {
     return (
-        <AppLayoutTemplate breadcrumbs={breadcrumbs}>
-            {children}
-        </AppLayoutTemplate>
+        <AppShell variant="sidebar">
+            <AppSidebar />
+            <AppContent variant="sidebar" className="min-w-0 overflow-x-clip">
+                <AppSidebarHeader breadcrumbs={breadcrumbs} />
+                {children}
+            </AppContent>
+        </AppShell>
     );
 }

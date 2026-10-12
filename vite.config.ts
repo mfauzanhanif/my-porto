@@ -13,8 +13,9 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.tsx'],
             refresh: true,
             fonts: [
-                bunny('Instrument Sans', {
-                    weights: [400, 500, 600],
+                bunny('Space Grotesk', {
+                    weights: [500, 700],
+                    optimizedFallbacks: false,
                 }),
             ],
         }),
@@ -37,6 +38,37 @@ export default defineConfig({
                 '**/.junie/**',
                 '**/vendor/**',
             ],
+        },
+    },
+    build: {
+        chunkSizeWarningLimit: 1000,
+        rolldownOptions: {
+            output: {
+                codeSplitting: {
+                    groups: [
+                        {
+                            name: 'react-vendor',
+                            test: /node_modules[\\/](react|react-dom)[\\/]/,
+                            priority: 30,
+                        },
+                        {
+                            name: 'ui-vendor',
+                            test: /node_modules[\\/](@base-ui|@radix-ui|lucide-react)[\\/]/,
+                            priority: 20,
+                        },
+                        {
+                            name: 'inertia-vendor',
+                            test: /node_modules[\\/]@inertiajs[\\/]/,
+                            priority: 15,
+                        },
+                        {
+                            name: 'vendor',
+                            test: /node_modules/,
+                            priority: 10,
+                        },
+                    ],
+                },
+            },
         },
     },
     lint: {
